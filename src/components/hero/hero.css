@@ -1,0 +1,79 @@
+/*
+    ===================================
+            Table Of Contents
+    ===================================
+
+    1. Left Section
+    2. Right Section
+    3. Modal == Pop Up
+    4. Responsive Design (Media Query)
+*/
+
+
+section.hero{
+    margin-top: 3rem;
+}
+
+section.hero .parent-avetar.flex{
+    align-items: end;
+    gap: 0.6rem;
+}
+
+/*
+    ===================================
+            Left Section
+    ===================================
+*/
+
+section.hero .left-section{
+   flex-grow: 1; 
+}
+
+section.hero .icon-verified{
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+}
+
+section.hero .avetar{
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    padding: 2px;
+
+    box-shadow: 2px 2px 40px rgba(203, 200, 200, .586) inset;
+}
+
+section.hero h1.title{
+    font-size: 2.05rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+
+section.hero p.sub-title{
+    color: var(--subtitle);
+    font-size: .9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+}
+
+section.hero .all-icons{
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+    
+}
+
+section.hero .all-icons .icon:hover{
+    font-size: 1.4rem;
+    transition: .3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+}
+
+/*
+    ==========================================
+            Right Section == Animition
+    =========================================
+*/

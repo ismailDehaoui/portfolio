@@ -6,10 +6,13 @@ html{
   letter-spacing: 0.1px;
 }
 
+html {box-sizing: inherit;}
+*,*:before, *:after { box-sizing: inherit;}
 *{
   margin: 0;
   padding: 0;
 }
+
 :root{
   --primary: #000;
   --secondary: rgb(24, 24, 27);
@@ -22,10 +25,14 @@ html{
   --bgHeader: rgb(39, 39, 42);
 
   --blue: rgb(93, 188, 252);
+
+  --icon-hover: #d4d4d8
 }
+
 .light{
   --primary: #fff;
 }
+
 body{
   background-color: var(--primary);
   color: #fff;
@@ -37,11 +44,14 @@ body{
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
+  padding: 0 4.8rem;
 }
 
 .divider{
   border-bottom:  1px  solid var(--border );
   margin: 3rem 0;
+  width: calc(100% + 4.8rem + 4.8rem);
+  margin-left: -4.8rem;
 }
 
 li{
@@ -68,3 +78,30 @@ button {all: unset;}
 button:hover {cursor:pointer;}
 
 button:active {scale:.9;}
+
+@media(max-width: 1000px){
+  
+  .container{
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+
+  .divider{
+    width: calc(100% +1.7rem + 1.7rem);
+    margin-left: -1.7rem;
+  }
+  
+}
+
+@media(max-width: 600px){
+  
+  .container{
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+
+  .divider{
+    width: calc(100% +1.7rem + 1.7rem);
+    margin-left: -1.7rem;
+  }
+}
